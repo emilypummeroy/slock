@@ -34,3 +34,6 @@ static XRectangle rectangles[9] = {
 
 /* allow control key to not trigger fail */
 static const int controlkeyclear = 0;
+
+/* time in seconds to cancel lock with mouse movement */
+static const int timetocancel = 3;
