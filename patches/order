@@ -1,0 +1,9 @@
+# 0	004012b Apply arch compatibility: /dev/null
+
+1	8d66b52 Apply patch 1: patches/slock-capscolor-20220921-35633d4.diff
+2	2b7ab6f Apply patch 2: patches/slock-dwmlogo-20210324.diff
+3	857438d Apply patch 3: patches/slock-git-20161012-control-clear.diff
+4	2914390 Apply patch 4: patches/slock-quickcancel-1.4.diff
+5	5002761 Apply patch 5: patches/slock-terminalkeys-1.4.diff
+
+# 6	--	Apply config patch: patches/config.h.diff
