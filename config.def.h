@@ -31,3 +31,6 @@ static XRectangle rectangles[9] = {
 	{ 11,	4,	1,	2 },
 
 };
+
+/* allow control key to not trigger fail */
+static const int controlkeyclear = 0;
