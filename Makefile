@@ -20,9 +20,21 @@ options:
 
 ${OBJ}: config.h config.mk arg.h util.h
 
-config.h:
-	@echo creating $@ from config.def.h
-	@cp config.def.h $@
+init:
+	@echo creating config.h from config.def.h
+	@cp config.def.h config.h
+
+clear:
+	@echo clearing config.h
+	@rm config.h config.h.rej
+
+config.h: clear
+	@echo creating $@ from config.def.h and patches/config.h.diff
+	@patch -ui patches/config.h.diff config.def.h -o $@
+
+save:
+	@echo saving config patch as patches/config.h.diff
+	diff -u config.def.h config.h >patches/config.h.diff
 
 slock: ${OBJ}
 	@echo CC -o $@
@@ -58,4 +70,4 @@ uninstall:
 	@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
 	@rm -f ${DESTDIR}${MANPREFIX}/man1/slock.1
 
-.PHONY: all options clean dist install uninstall
+.PHONY: all options clean dist install uninstall clear init save

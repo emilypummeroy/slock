@@ -1,0 +1,28 @@
+--- config.def.h	2023-02-12 20:48:08.149461333 +1100
++++ config.h	2023-02-12 21:26:12.340986110 +1100
+@@ -3,11 +3,11 @@
+ static const char *group = "nobody";
+ 
+ static const char *colorname[NUMCOLS] = {
+-	[BACKGROUND] =   "black",     /* after initialization */
+-	[INIT] =   "#2d2d2d",     /* after initialization */
+-	[INPUT] =  "#005577",   /* during input */
+-	[FAILED] = "#CC3333",   /* wrong password */
+-	[CAPS] = "red",         /* CapsLock on */
++	[BACKGROUND] =   "#0c1f15",     /* after initialization */
++	[INIT] =   "#293232",	/* after initialization	*/
++	[INPUT]	=  "#00ffaa",	/* during input	*/
++	[FAILED] = "#de3d2f",	/* wrong password */
++	[CAPS] =   "#945f3b",	/* CapsLock on */
+ };
+ 
+ /* treat a cleared input like a wrong password (color) */
+@@ -33,7 +33,7 @@
+ };
+ 
+ /* allow control key to not trigger fail */
+-static const int controlkeyclear = 0;
++static const int controlkeyclear = 1;
+ 
+ /* time in seconds to cancel lock with mouse movement */
+ static const int timetocancel = 3;
