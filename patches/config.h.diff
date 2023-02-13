@@ -1,5 +1,5 @@
---- config.def.h	2023-02-12 20:48:08.149461333 +1100
-+++ config.h	2023-02-12 21:26:12.340986110 +1100
+--- config.def.h	2023-02-13 13:35:21.226310870 +1100
++++ config.h	2023-02-13 14:49:10.276494437 +1100
 @@ -3,11 +3,11 @@
  static const char *group = "nobody";
  
@@ -9,11 +9,11 @@
 -	[INPUT] =  "#005577",   /* during input */
 -	[FAILED] = "#CC3333",   /* wrong password */
 -	[CAPS] = "red",         /* CapsLock on */
-+	[BACKGROUND] =   "#0c1f15",     /* after initialization */
-+	[INIT] =   "#293232",	/* after initialization	*/
-+	[INPUT]	=  "#00ffaa",	/* during input	*/
-+	[FAILED] = "#de3d2f",	/* wrong password */
-+	[CAPS] =   "#945f3b",	/* CapsLock on */
++	[BACKGROUND] = "#0f261f", // 160 60 15  /* after initialization */
++	[INIT]       = "#24332e", // 160 30 20  /* after initialization	*/
++	[INPUT]	     = "#00d990", // 160 100 85 /* during input	*/
++	[FAILED]     = "#de3d2f", // 5 79 87    /* wrong password */
++	[CAPS]       = "#945f3b", // 24 60 58   /* CapsLock on */
  };
  
  /* treat a cleared input like a wrong password (color) */
