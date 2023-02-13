@@ -25,8 +25,8 @@ init:
 	@cp config.def.h config.h
 
 clear:
-	@echo clearing config.h
-	@rm config.h config.h.rej
+	@echo clearing config.h and config.h.rej
+	-rm config.h config.h.rej
 
 config.h: clear
 	@echo creating $@ from config.def.h and patches/config.h.diff
