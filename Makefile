@@ -28,7 +28,7 @@ clear:
 	@echo clearing config.h and config.h.rej
 	-rm config.h config.h.rej
 
-config.h: clear
+config.h:
 	@echo creating $@ from config.def.h and patches/config.h.diff
 	@patch -ui patches/config.h.diff config.def.h -o $@
 
